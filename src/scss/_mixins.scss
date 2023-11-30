@@ -1,0 +1,8 @@
+@mixin input (){
+  border-radius: 12px;
+  border: 0.5px solid rgba($white, 0.4);
+
+  background: rgba($light-purple, 0.25);
+
+  box-shadow: 0 10px 32px -4px rgba($blue 0.10), 0px 6px 14px -6px rgba($blue, 0.12);
+}
