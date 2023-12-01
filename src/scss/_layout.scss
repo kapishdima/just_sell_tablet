@@ -8,13 +8,16 @@
     font-weight: 500;
     line-height: 150%;
 
-    @include tablet-m {
-      color: white;
+    @media screen and (max-width: 600px) {
       font-size: 44px;
     }
-    @include tablet-s {
-      font-size: 24px;
-    }
+    // @include tablet-m {
+    //   color: white;
+    //   font-size: 44px;
+    // }
+    // @include tablet-s {
+    //   font-size: 24px;
+    // }
   }
 }
 
