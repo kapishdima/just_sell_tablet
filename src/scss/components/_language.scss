@@ -1,0 +1,25 @@
+.language {
+  top: 245px;
+  position: fixed;
+  width: 170px;
+  height: 132px;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet-m(){
+    top: 48px;
+  }
+  @include tablet-s(){
+    top: 30px;
+  }
+  &__item {
+    width: 120px;
+    height: 86px;
+    background-color: $white;
+    &--active {
+    }
+  }
+}
