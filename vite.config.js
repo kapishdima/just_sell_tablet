@@ -1,6 +1,6 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
-import { readdir, readdirSync } from "fs";
+import { readdirSync } from "fs";
 
 const createHtmlEntries = () => {
   const files = readdirSync(resolve(__dirname, "src", "pages"));
@@ -16,8 +16,10 @@ export default defineConfig({
   build: {
     outDir: "../dist",
     rollupOptions: {
-      main: resolve(__dirname, "src", "index.html"),
-      ...createHtmlEntries(),
+      input: {
+        main: resolve(__dirname, "src/index.html"),
+        ...createHtmlEntries(),
+      },
     },
   },
 });

@@ -1,17 +1,17 @@
 @mixin tablet-l() {
-  @media (max-width: 1600px) {
+  @media screen and (max-width: 1600px) {
     @content;
   }
 }
 
 @mixin tablet-m() {
-  @media (max-width: 800px) {
+  @media screen and (max-width: 800px) {
     @content;
   }
 }
 
 @mixin tablet-s() {
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }
