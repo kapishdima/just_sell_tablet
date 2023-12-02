@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="logo-watermark"></div>
+    <div class="language">
+        <div class="language__item "><img src="../assets/svg/uk-flag.svg" alt="uk flag"></div>
+        <div class="language__item language__item--active"><img src="../assets/svg/ukr-flag.svg" alt="ukr flag"></div>
+    </div>
+    <div class="figure"><img class="figure__img" src="../assets/img/figures/additional.png" alt="figure"></div>
+    <div class="payment-page layout">
+        <img class="payment-page__logo" src=".././assets/img/logo.png" alt="">
+        <h1 class="layout__title">Сторінка оплати</h1>
+        <div class="payment-page__content">
+            <form class="payment-page__form form" id="paymentForm" action="#">
+                <label class="form__label" for="name">
+                    <span class="form__label--text">ПІБ</span>
+                    <input class="form__input" type="text" id="name" placeholder="Введіть ПІБ">
+                </label>
+                <label class="form__label" for="contractId">
+                    <span class="form__label--text">Номер договору<span class="form__label--danger">*</span>:</span>
+                    <input required class="form__input formField" type="tel" id="contractId" placeholder="+38 (0_ _) _ _ _-_ _-_ _">
+                </label>
+
+                    <label class="form__label" for="minSum">
+                        <span class="form__label--text form__label--sum">Мінімальна сума внесення:</span>
+                        <div class="form__sum">
+                        <input required class="form__input form__input--sum formField" type="number" id="minSum" placeholder="0.00">
+                        </div>
+                    </label>
+
+                <button class="form__submit" id="submitButton" type="submit">Оплатити</button>
+                <button type="button" id="buttonBack" class="payment-page__button-back">
+                    <img class="payment-page__button-back--icon" src="../assets/svg/button-back-icon.svg" alt="arrow-left">
+                    Назад</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+</div>
+<script type="module" src="../js/index.js"></script>
+</body>
+</html>

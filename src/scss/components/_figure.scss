@@ -1,0 +1,13 @@
+.figure{
+  position:absolute;
+  top: 2%;
+  right: 2%;
+  width: 130px;
+  pointer-events: none;
+
+  @include tablet-m(){
+    width: 70px;
+    top: 1%;
+    right: 1%;
+  }
+}

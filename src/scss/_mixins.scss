@@ -4,5 +4,36 @@
 
   background: rgba($light-purple, 0.25);
 
-  box-shadow: 0 10px 32px -4px rgba($blue 0.10), 0px 6px 14px -6px rgba($blue, 0.12);
+  box-shadow: 0 10px 32px -4px rgba($blue, 0.10), 0px 6px 14px -6px rgba($blue, 0.12);
+}
+@mixin title (){
+  color: $white;
+  text-align: center;
+  font-family: $roboto;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  @include tablet-m {
+    font-size: 44px;
+  }
+  @include tablet-s{
+    font-size: 24px;
+  }
+}
+@mixin container(){
+    max-width: 1600px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 0 100px;
+
+    @include tablet-m() {
+      padding: 0 44px;
+    }
+
+    @include tablet-s() {
+      padding: 0 68px;
+    }
 }

@@ -5,7 +5,12 @@
 @import "./breakpoints";
 @import "./layout";
 
+
 @import "./components/language";
+@import "./components/figure";
+@import "./components/form";
+@import "./pages/ads";
+@import "./pages/payment";
 
 body {
   font-family: $roboto;
