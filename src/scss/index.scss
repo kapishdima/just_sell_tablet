@@ -5,7 +5,6 @@
 @import "./breakpoints";
 @import "./layout";
 
-
 @import "./components/language";
 @import "./components/figure";
 @import "./components/form";
@@ -13,6 +12,7 @@
 @import "./components/tooltip";
 @import "./components/form-checkbox";
 @import "./components/checkbox";
+@import "./components/fond";
 
 @import "./pages/ads";
 @import "./pages/payment";
@@ -22,6 +22,8 @@
 @import "./pages/check--qr";
 @import "./pages/check";
 @import "./pages/change";
+@import "./pages/charity";
+@import "./pages/thanks";
 
 body {
   font-family: $roboto;

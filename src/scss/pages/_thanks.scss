@@ -1,0 +1,42 @@
+.thanks-page {
+  @include container();
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  &__img {
+    background-image: url("../../assets/img/thanks.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 645px;
+    height: 645px;
+    @include tablet-m() {
+      width: 397px;
+      height: 397px;
+    }
+    @include tablet-s() {
+      width: 286px;
+      height: 286px;
+    }
+  }
+  &__text {
+    align-self: center;
+    color: $white;
+    text-align: center;
+    font-family: $roboto;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include tablet-m() {
+      font-size: 38px;
+    }
+    @include tablet-s() {
+      font-size: 24px;
+    }
+  }
+}

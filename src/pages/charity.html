@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>charity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="logo-watermark"></div>
+    <div class="language">
+      <div class="language__item "><img src="../assets/svg/uk-flag.svg" alt="uk flag"></div>
+      <div class="language__item language__item--active"><img src="../assets/svg/ukr-flag.svg" alt="ukr flag">
+      </div>
+    </div>
+
+    <div class="layout">
+      <h2 class="layout__main-title">Ваша решта</h2>
+      <div class="charity-page">
+        <form class="charity-page__form form-checkbox" action="#">
+          <div class="form-checkbox__sum">
+            <label class="form-checkbox__label--sum form-checkbox__label--text" for="email">
+              Перерахувати на благодійність
+              <input required type="number" id="email" class="form-checkbox__input formField" placeholder="0.00">
+            </label>
+          </div>
+        </form>
+        <div class="charity-page__fonds-list">
+
+          <div class="fond">
+            <div class="fond__info">
+              <img class="fond__info--img" src="../assets/img/fond.png" alt="fond logo">
+              <p class="fond__info--text">Фонд допомоги “Мама Іра”</p>
+            </div>
+            <img class="fond__icon" src="../assets/svg/fond-arrow-icon.svg" alt="">
+          </div>
+
+          <div class="fond">
+            <div class="fond__info">
+              <img class="fond__info--img" src="../assets/img/fond.png" alt="fond logo">
+              <p class="fond__info--text">Фонд допомоги “Все для перемоги”</p>
+            </div>
+            <img class="fond__icon" src="../assets/svg/fond-arrow-icon.svg" alt="arrow">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </div>
+  <script type="module" src="../js/index.js"></script>
+</body>
+
+</html>
