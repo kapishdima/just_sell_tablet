@@ -1,0 +1,18 @@
+.timer{
+  &__text{
+    color: $danger;
+    text-align: center;
+    font-family: $roboto;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include tablet-m() {
+      font-size: 58px;
+    }
+    @include tablet-s() {
+      font-size: 32px;
+    }
+  }
+}

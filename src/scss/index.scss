@@ -9,10 +9,12 @@
 @import "./components/language";
 @import "./components/figure";
 @import "./components/form";
+@import "./components/timer";
 @import "./pages/ads";
 @import "./pages/payment";
 @import "./pages/success";
 @import "./pages/fail";
+@import "./pages/idle";
 
 body {
   font-family: $roboto;
