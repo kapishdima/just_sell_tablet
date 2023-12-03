@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="logo-watermark"></div>
+    <div class="language">
+        <div class="language__item "><img src="../assets/svg/uk-flag.svg" alt="uk flag"></div>
+        <div class="language__item language__item--active"><img src="../assets/svg/ukr-flag.svg" alt="ukr flag"></div>
+    </div>
+    <div class="tooltip">
+    <img  class="tooltip__img" src="../assets/img/tooltip-girl.png" alt="girl">
+    </div>
+    <div class="figure"><img class="figure__img" src="../assets/img/figures/check.png" alt="figure"></div>
+    <div class="layout">
+        <h2 class="layout__main-title">Введіть електронну пошту</h2>
+        <div class="check-page">
+            <form class="check-page__form form" action="#">
+                <label class="form__label--text" for="email">
+                    Електронна пошта <span class="form__label--danger">*</span>:
+                    <input  required type="email" id="email" class="form__input formField" placeholder="Введіть електронну пошту">
+                </label>
+                <button type="submit" id="submitButton" class="form__submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+</div>
+<script type="module" src="../js/index.js"></script>
+</body>
+</html>

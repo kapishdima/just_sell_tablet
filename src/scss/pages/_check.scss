@@ -1,0 +1,23 @@
+.check-page{
+  @include container();
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet-m(){
+    margin-top: 44px;
+  }
+  @include tablet-s(){
+    margin-top: 45px;
+  }
+  &__form{
+    width: 100%;
+
+  }
+
+  &__button{
+    @include button($gray,$gray,$white);
+  }
+
+}

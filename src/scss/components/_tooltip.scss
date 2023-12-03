@@ -1,0 +1,21 @@
+.tooltip{
+  position: absolute;
+  bottom: 41px;
+
+  width: 768px;
+  height: auto;
+
+  @include tablet-m(){
+    width: 422px;
+  }
+  @include tablet-s(){
+    left: -20px;
+    bottom: 41px;
+    width: 322px;
+  }
+
+  &__img{
+    width: 100%;
+    height: auto;
+  }
+}

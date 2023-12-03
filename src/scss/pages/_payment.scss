@@ -51,24 +51,6 @@
     }
   }
 
-  &__logo {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin: 60px 0 0;
-
-    width: 416px;
-    height: auto;
-
-    @include tablet-m {
-      margin: 48px 0 3px;
-      width: 236px;
-    }
-    @include tablet-s {
-      margin: 14px 0 10px;
-      width: 161px;
-    }
-  }
 
   &__content {
     @include container();

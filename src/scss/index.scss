@@ -10,11 +10,15 @@
 @import "./components/figure";
 @import "./components/form";
 @import "./components/timer";
+@import "./components/tooltip";
+
 @import "./pages/ads";
 @import "./pages/payment";
 @import "./pages/success";
 @import "./pages/fail";
 @import "./pages/idle";
+@import "./pages/check--qr";
+@import "./pages/check";
 
 body {
   font-family: $roboto;
