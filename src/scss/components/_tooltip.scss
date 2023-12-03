@@ -2,9 +2,6 @@
   position: absolute;
   bottom: 41px;
 
-  width: 768px;
-  height: auto;
-
   @include tablet-m(){
     width: 422px;
   }
@@ -15,7 +12,24 @@
   }
 
   &__img{
-    width: 100%;
+    width: 768px;
     height: auto;
-  }
+    @include tablet-m(){
+      width: 422px;
+    }
+    @include tablet-s(){
+      width: 322px;
+    }
+    &--small{
+      width: 768px;
+      height: auto;
+      @include tablet-m(){
+        width: 422px;
+      }
+      @include tablet-s(){
+        width: 239px;
+      }
+    }
+    }
+
 }

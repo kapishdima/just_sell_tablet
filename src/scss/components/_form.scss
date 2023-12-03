@@ -20,12 +20,20 @@
   }
 
   &__sum{
+    display: flex;
     align-self: center;
     width: 636px;
     @include tablet-m(){
       width: 232px;
     }
-
+  }
+  &__sum2{
+    display: flex;
+    align-self: center;
+    width: 817px;
+    @include tablet-m(){
+      width: 232px;
+    }
   }
 
   &__label {

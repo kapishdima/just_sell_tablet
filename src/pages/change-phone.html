@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="logo-watermark"></div>
+    <div class="language">
+        <div class="language__item "><img src="../assets/svg/uk-flag.svg" alt="uk flag"></div>
+        <div class="language__item language__item--active"><img src="../assets/svg/ukr-flag.svg" alt="ukr flag"></div>
+    </div>
+    <div class="tooltip">
+        <img  class="tooltip__img--small" src="../assets/img/tooltip-girl-2.png" alt="girl">
+    </div>
+    <div class="layout">
+        <h2 class="layout__main-title">Ваша решта</h2>
+        <div class="change-page">
+            <form class="change-page__form form-checkbox" action="#">
+                <div class="form-checkbox__sum">
+                    <label class="form-checkbox__label--sum form-checkbox__label--text" for="email">
+                        Оберіть спосіб розподілення решти:
+                        <input  required type="number" id="email" class="form-checkbox__input formField" placeholder="0.00">
+                    </label>
+                </div>
+                <label class="form__label" for="phone">
+                    <span class="form__label--text">Телефон<span class="form__label--danger">*</span>:</span>
+                    <input required class="form__input formField" type="tel" id="phone" placeholder="+38 (0_ _) _ _ _-_ _-_ _">
+                </label>
+                <button type="submit" id="submitButton" class="form-checkbox__submit">Відправити </button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+</div>
+<script type="module" src="../js/index.js"></script>
+</body>
+</html>

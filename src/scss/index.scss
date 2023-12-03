@@ -11,6 +11,8 @@
 @import "./components/form";
 @import "./components/timer";
 @import "./components/tooltip";
+@import "./components/form-checkbox";
+@import "./components/checkbox";
 
 @import "./pages/ads";
 @import "./pages/payment";
@@ -19,6 +21,7 @@
 @import "./pages/idle";
 @import "./pages/check--qr";
 @import "./pages/check";
+@import "./pages/change";
 
 body {
   font-family: $roboto;
