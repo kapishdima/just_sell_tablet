@@ -1,0 +1,99 @@
+.payment-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 16px;
+  @include tablet-m() {
+    gap: 8px;
+  }
+  &__card {
+  }
+}
+.payment-card {
+  position: relative;
+  width: 692px;
+  height: 549px;
+
+  padding: 47px 38px;
+  border-radius: 12px;
+  background-color: rgba($light-purple, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @include tablet-m() {
+    width: 352px;
+    height: 264px;
+    padding: 17px 10px;
+
+    gap: 10px;
+  }
+  @include tablet-s() {
+    width: 229px;
+    height: 172px;
+    padding: 8px 6px;
+
+    gap: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 347px;
+    border: 1px solid $white;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet-m() {
+      border-radius: 8px;
+      height: 187px;
+    }
+
+    @include tablet-s() {
+      height: 122px;
+    }
+  }
+
+  &__text {
+    color: $white;
+
+    text-align: center;
+    font-family: $roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include tablet-m() {
+      font-size: 22px;
+    }
+    @include tablet-s() {
+      font-size: 16px;
+    }
+  }
+  &--focused {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border: 4px solid $secondary;
+      border-radius: 12px;
+
+      @include tablet-m() {
+        border-width: 2px;
+      }
+      @include tablet-s() {
+        border-width: 1px;
+      }
+    }
+  }
+}

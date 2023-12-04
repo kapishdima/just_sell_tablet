@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>main-payment-qr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="logo-watermark"></div>
+    <div class="language">
+      <div class="language__item "><img src="../assets/svg/uk-flag.svg" alt="uk flag"></div>
+      <div class="language__item language__item--active"><img src="../assets/svg/ukr-flag.svg" alt="ukr flag">
+      </div>
+    </div>
+    <div class="figure"><img class="figure__img" src="../assets/img/figures/choose-payment.png" alt="figure"></div>
+    <div class="layout">
+      <img class="layout__logo" src=".././assets/img/logo.png" alt="">
+      <h2 class="layout__title">Сторінка оплати</h2>
+      <div class="main-payment-page">
+        <form class="main-payment-page__form form-checkbox" action="#">
+          <div class="form__sum">
+            <label class="form__label" for="sum">
+              <span class="form__label--text form__label--sum">Внесіть суму<span
+                  class="form__label--danger">*</span>:</span>
+              <input required class="form__input form__input--sum formField" type="number" id="sum" placeholder="0.00">
+            </label>
+          </div>
+        </form>
+        <div class="main-payment-page__info">
+          <p class=" main-payment-page__info--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque
+            eleifend donec pretium. Commodo nulla facilisi nullam vehicula ipsum a.</p>
+          <h3 class="main-payment-page__info--method">
+            Оплата криптовалютою
+          </h3>
+          <div class="main-payment-page__qr">
+            <img class="main-payment-page__qr--img" src="../assets/img/qr.png" alt="qr">
+            <p class="main-payment-page__qr--error">Помилка</p>
+          </div>
+
+          <div class="main-payment-page__buttons">
+            <button class="main-payment-page__button-back" type="button"><img
+                class="main-payment-page__button-back--icon" src="../assets/svg/button-back-icon.svg" alt="back">
+              Назад</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </div>
+  <script type="module" src="../js/index.js"></script>
+</body>
+
+</html>

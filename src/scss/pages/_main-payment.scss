@@ -1,0 +1,126 @@
+.main-payment-page {
+  @include container();
+
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-m() {
+    margin-top: 44px;
+  }
+  @include tablet-s() {
+    padding: 0 44px;
+    margin-top: 28px;
+  }
+  &__form {
+    width: 100%;
+  }
+  &__info {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    @include tablet-m() {
+      margin-top: 18px;
+      gap: 44px;
+    }
+    @include tablet-s() {
+      margin-top: 8px;
+      gap: 24px;
+    }
+
+    &--text {
+      color: $white;
+      font-family: $roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      @include tablet-m() {
+        font-size: 22px;
+      }
+
+      @include tablet-s() {
+        font-size: 12px;
+      }
+    }
+    &--method {
+      color: $white;
+      font-family: $roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      @include tablet-m() {
+        font-size: 22px;
+      }
+      @include tablet-s() {
+        font-size: 16px;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+
+    @include tablet-m() {
+      gap: 18px;
+    }
+    @include tablet-s() {
+      gap: 12px;
+    }
+  }
+  &__button {
+    @include button($secondary, $secondary, $white);
+  }
+  &__button-back {
+    @include button(transparent, $white, $white);
+  }
+  &__qr {
+    position: relative;
+    display: flex;
+    align-self: center;
+    width: 628px;
+    height: 644px;
+    background-color: $white;
+    border: 2px solid $secondary;
+    border-radius: 8px;
+
+    padding: 42px 35px;
+
+    @include tablet-m() {
+      border-width: 1px;
+      width: 352px;
+      height: 360px;
+      padding: 26px 25px;
+    }
+
+    @include tablet-s() {
+      width: 269px;
+      height: 270px;
+      padding: 22px;
+    }
+    &--error {
+      // display: none;
+      // display: block;
+
+      color: $danger;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include tablet-m() {
+        font-size: 14px;
+      }
+    }
+  }
+}
