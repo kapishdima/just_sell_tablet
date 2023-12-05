@@ -1,0 +1,236 @@
+.cart-popup {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  padding: 38px 41px;
+
+  border-radius: 8px;
+
+  background: $primary;
+  box-shadow: 0px 4px 4px 0px rgba($black, 0.25);
+
+  @include tablet-m {
+    top: 150px;
+    padding: 24px 24px;
+  }
+
+  @include tablet-s {
+    top: 80px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      color: $white;
+      font-family: $roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      @include tablet-m {
+        font-size: 38px;
+      }
+
+      @include tablet-s {
+        font-size: 24px;
+      }
+    }
+    &__close {
+      cursor: pointer;
+      width: 72px;
+      height: 72px;
+
+      background-image: url("../assets/svg/close.svg");
+
+      background-color: transparent;
+      border: none;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include tablet-m {
+        width: 56px;
+        height: 56px;
+      }
+
+      @include tablet-s {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+
+    @include tablet-m {
+      gap: 12px;
+    }
+    &__img {
+      width: 314px;
+      height: 314px;
+
+      @include tablet-m {
+        width: 148px;
+        height: 148px;
+      }
+
+      @include tablet-s {
+        width: 88px;
+        height: 88px;
+      }
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 46px;
+
+      @include tablet-m {
+        gap: 10px;
+      }
+
+      &__name {
+        color: $secondary;
+        font-family: $roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @include tablet-m {
+          font-size: 24px;
+        }
+
+        @include tablet-s {
+          font-size: 12px;
+        }
+      }
+      &-options {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        @include tablet-s {
+          gap: 10px;
+        }
+        &__title {
+          color: $white;
+          font-family: $roboto;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          @include tablet-m {
+            font-size: 22px;
+          }
+
+          @include tablet-s {
+            font-size: 12px;
+          }
+        }
+        &-functional {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          &__button {
+            width: 44px;
+            height: 44px;
+
+            background-color: transparent;
+            border: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @include tablet-m {
+              width: 20px;
+              height: 20px;
+            }
+
+            @include tablet-s {
+              width: 16px;
+              height: 16px;
+            }
+            &--minus {
+              background-image: url("../assets/svg/remove.svg");
+            }
+            &--plus {
+              background-image: url("../assets/svg/add.svg");
+            }
+          }
+          &__input {
+            background-color: transparent;
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 53px;
+            color: $white;
+            font-family: $roboto;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            @include tablet-m {
+              max-width: 45px;
+              font-size: 22px;
+            }
+
+            @include tablet-s {
+              max-width: 30px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      &__price {
+        color: $white;
+        font-family: $roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @include tablet-m {
+          font-size: 22px;
+        }
+
+        @include tablet-s {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    @include tablet-m() {
+      gap: 18px;
+    }
+
+    @include tablet-s() {
+      gap: 10px;
+    }
+
+    &--confirm {
+      @include button($secondary, $secondary, $white);
+    }
+    &--cancel {
+      @include button(transparent, $white, $white);
+    }
+  }
+}
