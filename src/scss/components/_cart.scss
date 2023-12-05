@@ -1,0 +1,85 @@
+.cart {
+  position: fixed;
+  right: 115px;
+  top: 255px;
+
+  transition: all 0.3s ease-in-out;
+
+  @include tablet-m() {
+    top: 48px;
+    right: 45px;
+  }
+  @include tablet-s() {
+    top: 40px;
+    right: 21px;
+  }
+
+  &__icon {
+    position: relative;
+    width: 93px;
+    height: 93px;
+    background-image: url("../../assets/svg/cart.svg");
+    background-size: contain;
+
+    @include tablet-m() {
+      width: 69px;
+      height: 69px;
+    }
+    @include tablet-s() {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  &__count {
+    position: absolute;
+    top: -15%;
+    right: -15%;
+
+    transform: translate(15%, -15%);
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $white;
+    text-align: center;
+    font-family: $roboto;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    background-color: $secondary;
+
+    border-radius: 50%;
+
+    @include tablet-m() {
+      top: -10%;
+      right: -10%;
+
+      transform: translate(10%, -10%);
+
+      width: 27px;
+      height: 27px;
+
+      font-size: 18px;
+    }
+
+    @include tablet-s() {
+      top: -15%;
+      right: -15%;
+
+      transform: translate(15%, -15%);
+
+      width: 14px;
+      height: 14px;
+
+      font-size: 12px;
+      border-radius: 50%;
+    }
+  }
+}

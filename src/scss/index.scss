@@ -14,6 +14,9 @@
 @import "./components/checkbox";
 @import "./components/fond";
 @import "./components/payment-method-grid";
+@import "./components/deposit-form";
+@import "./components/product-list";
+@import "./components/cart";
 
 @import "./pages/ads";
 @import "./pages/payment";
@@ -26,6 +29,8 @@
 @import "./pages/charity";
 @import "./pages/thanks";
 @import "./pages/main-payment";
+@import "./pages/deposit";
+@import "./pages/error";
 
 body {
   font-family: $roboto;

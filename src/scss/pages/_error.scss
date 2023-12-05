@@ -1,0 +1,108 @@
+.error-page {
+  @include container();
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px;
+  @include tablet-s() {
+    padding: 0 24px;
+  }
+
+  &__message {
+    margin-top: 268px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet-m() {
+      margin-top: 173px;
+    }
+
+    @include tablet-s() {
+      align-self: center;
+      width: 411px;
+      margin-top: 45px;
+    }
+  }
+
+  &__message--img {
+    margin-bottom: 60px;
+    align-self: center;
+    width: 536px;
+    height: 536px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/img/fail.png");
+
+    @include tablet-m() {
+      width: 252px;
+      height: 252px;
+
+      margin-bottom: 18px;
+    }
+
+    @include tablet-s() {
+      width: 153px;
+      height: 153px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__message--title {
+    margin-bottom: 72px;
+    color: $white;
+    text-align: center;
+    font-family: $roboto;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include tablet-m() {
+      margin-bottom: 36px;
+      font-size: 38px;
+    }
+
+    @include tablet-s() {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    margin-top: 104px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+
+    @include tablet-m() {
+      margin-top: 44px;
+      gap: 25px;
+    }
+
+    @include tablet-s() {
+      margin-top: 42px;
+      gap: 16px;
+    }
+  }
+
+  &__list-name {
+    color: $white;
+    font-family: $roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include tablet-m() {
+      font-size: 22px;
+    }
+
+    @include tablet-s() {
+      font-size: 18px;
+      margin-left: 20px;
+    }
+  }
+  &__button {
+    @include button($secondary, $secondary, $white);
+  }
+}

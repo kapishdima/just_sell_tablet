@@ -1,0 +1,106 @@
+.deposit {
+  @include container();
+  padding: 0 88px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-m() {
+    margin-top: 44px;
+    padding: 0 44px;
+  }
+  @include tablet-s() {
+    padding: 0 60px;
+    margin-top: 28px;
+  }
+  &__form {
+    width: 100%;
+  }
+  &__info {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    @include tablet-m() {
+      margin-top: 18px;
+      gap: 44px;
+    }
+    @include tablet-s() {
+      margin-top: 8px;
+      gap: 24px;
+    }
+
+    &--text {
+      color: $white;
+      font-family: $roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      @include tablet-m() {
+        font-size: 22px;
+      }
+
+      @include tablet-s() {
+        font-size: 12px;
+      }
+    }
+    &--method {
+      color: $white;
+      font-family: $roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      @include tablet-m() {
+        font-size: 22px;
+      }
+      @include tablet-s() {
+        font-size: 16px;
+      }
+    }
+  }
+  &__buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+
+    &--error {
+      top: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      color: $danger;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+
+      @include tablet-m() {
+        top: -40px;
+        font-size: 22px;
+      }
+      @include tablet-s() {
+        top: -21px;
+        font-size: 14px;
+      }
+    }
+
+    @include tablet-m() {
+      gap: 18px;
+    }
+    @include tablet-s() {
+      gap: 12px;
+    }
+  }
+  &__button {
+    @include button($secondary, $secondary, $white);
+  }
+  &__button-back {
+    @include button(transparent, $white, $white);
+  }
+}
