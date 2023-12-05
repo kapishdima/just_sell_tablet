@@ -1,17 +1,17 @@
-.ads-page{
+.ads-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 138px;
 
-  @include tablet-m(){
+  @include tablet-m() {
     gap: 85px;
   }
-  @include tablet-s(){
+  @include tablet-s() {
     gap: 34px;
   }
-  &__content{
+  &__content {
     max-width: 1600px;
     padding: 0 60px;
 
@@ -19,23 +19,78 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
-  }
-  &__video{
-    width: 100%;
-    height: 61vh;
-    background-color: #ffaeb6;
-}
-  &__controls{
 
+    @include tablet-m() {
+      padding: 0 34px;
+      gap: 36px;
+    }
+    @include tablet-s() {
+      gap: 42px;
+    }
+  }
+  &__video {
+    width: 1480px;
+    height: 1565px;
+
+    background-color: $secondary;
+
+    border-radius: 20px;
+
+    @include tablet-m() {
+      width: 732px;
+      height: 774px;
+    }
+
+    @include tablet-s() {
+      width: 100%;
+      height: 577px;
+    }
+  }
+  &__controls {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     gap: 36px;
-    &--btn{
+
+    @include tablet-m() {
+      gap: 18px;
+    }
+    @include tablet-s() {
+      gap: 16px;
+    }
+  }
+  &__bullet {
+    display: flex;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: $white;
+
+    @include tablet-m() {
+      width: 24px;
+      height: 24px;
+    }
+    @include tablet-s() {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--current {
       display: flex;
       border-radius: 50%;
       width: 48px;
       height: 48px;
+
       background-color: $secondary;
+
+      @include tablet-m() {
+        width: 24px;
+        height: 24px;
+      }
+
+      @include tablet-s() {
+        width: 16px;
+        height: 16px;
+      }
     }
   }
 }

@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>payment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-<div class="wrapper">
-            <div class="logo-watermark"></div>
-    <div class="language">
-        <div class="language__item "><img src="../assets/svg/uk-flag.svg" alt="uk flag"></div>
-        <div class="language__item language__item--active"><img src="../assets/svg/ukr-flag.svg" alt="ukr flag"></div>
-    </div>
-    <div class="figure"><img class="figure__img" src="../assets/img/figures/payment.png" alt="figure"></div>
-    <div class="payment-page layout">
-        <img class="layout__logo" src=".././assets/img/logo.png" alt="">
-        <h1 class="layout__title">Сторінка оплати</h1>
-        <div class="payment-page__content">
-            <form class="payment-page__form form" id="paymentForm" action="#">
-                <label class="form__label" for="id">
-                    <span class="form__label--text">Введіть ідентифікатор:</span>
-                    <input class="form__input" type="text" id="id" placeholder="Введіть ідентифікатор">
-                </label>
-                <label class="form__label" for="phone">
-                    <span class="form__label--text">Телефон<span class="form__label--danger">*</span>:</span>
-                    <input required class="form__input formField" type="tel" id="phone" placeholder="+38 (0_ _) _ _ _-_ _-_ _">
-                </label>
-                <div class="form__sum">
-                    <label class="form__label" for="sum">
-                        <span class="form__label--text form__label--sum">Внесіть суму<span class="form__label--danger">*</span>:</span>
-                        <input required class="form__input form__input--sum formField" type="number" id="sum" placeholder="0.00">
-                    </label>
-                </div>
-                <button class="form__submit" id="submitButton" type="submit">Оплатити</button>
-            </form>
+    <div class="wrapper">
+        <div class="logo-watermark"></div>
+        <div class="language">
+            <div class="language__item "><img src="../assets/svg/uk-flag.svg" alt="uk flag"></div>
+            <div class="language__item language__item--active"><img src="../assets/svg/ukr-flag.svg" alt="ukr flag">
+            </div>
         </div>
+        <div class="figure"><img class="figure__img" src="../assets/img/figures/payment.png" alt="figure"></div>
+        <div class="payment-page layout">
+            <img class="layout__logo" src=".././assets/img/logo.png" alt="">
+            <h1 class="layout__title">Сторінка оплати</h1>
+            <div class="payment-page__content">
+                <form class="payment-page__form form" id="paymentForm" action="#">
+                    <label class="form__label" for="id">
+                        <span class="form__label--text">Введіть ідентифікатор:</span>
+                        <input class="form__input" type="text" id="id" placeholder="Введіть ідентифікатор">
+                    </label>
+                    <label class="form__label" for="phone">
+                        <span class="form__label--text">Телефон<span class="form__label--danger">*</span>:</span>
+                        <input required class="form__input formField" type="tel" id="phone"
+                            placeholder="+38 (0_ _) _ _ _-_ _-_ _">
+                    </label>
+                    <div class="form__sum">
+                        <label class="form__label" for="sum">
+                            <span class="form__label--text form__label--sum">Внесіть суму<span
+                                    class="form__label--danger">*</span>:</span>
+                            <input required class="form__input form__input--sum formField" type="number" id="sum"
+                                placeholder="0.00">
+                        </label>
+                    </div>
+                    <button class="form__submit" id="submitButton" type="submit">Оплатити</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer"></footer>
     </div>
-    <footer class="footer"></footer>
-</div>
-<script type="module" src="../js/index.js"></script>
+    <script type="module" src="../js/index.js"></script>
 </body>
+
 </html>
