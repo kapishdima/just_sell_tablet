@@ -1,0 +1,200 @@
+.product-popup {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+
+  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  padding: 38px 41px;
+
+  border-radius: 8px;
+
+  background: $primary;
+  box-shadow: 0px 4px 4px 0px rgba($black, 0.25);
+
+  @include tablet-m {
+    top: 150px;
+    padding: 24px 24px;
+  }
+
+  @include tablet-s {
+    top: 80px;
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      color: $white;
+      font-family: $roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+
+      @include tablet-m {
+        font-size: 38px;
+      }
+
+      @include tablet-s {
+        font-size: 24px;
+      }
+    }
+    &__close {
+      cursor: pointer;
+      width: 72px;
+      height: 72px;
+
+      background-image: url("../assets/svg/close.svg");
+
+      background-color: transparent;
+      border: none;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include tablet-m {
+        width: 56px;
+        height: 56px;
+      }
+
+      @include tablet-s {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  &-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include tablet-s() {
+        gap: 12px;
+      }
+    }
+    &-bullets {
+      align-self: center;
+      display: flex;
+      flex-direction: row;
+      gap: 18px;
+      @include tablet-s() {
+        gap: 8px;
+      }
+      &__item {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        &--active {
+          background-color: $secondary;
+        }
+        box-shadow: 0px 4px 4px 0px rgba($black, 0.25);
+
+        @include tablet-s {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+    &__item {
+      width: 303px;
+      height: 303px;
+      cursor: pointer;
+
+      @include tablet-m {
+        width: 132px;
+        height: 132px;
+      }
+      @include tablet-s {
+        width: 88px;
+        height: 88px;
+      }
+
+      &--button {
+        width: 72px;
+        height: 72px;
+        background-color: transparent;
+        border: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        &-left {
+          background-image: url("../assets/svg/slider-button.svg");
+        }
+        &-right {
+          transform: rotate(180deg);
+          background-image: url("../assets/svg/slider-button.svg");
+        }
+
+        @include tablet-m {
+          width: 22px;
+          height: 22px;
+        }
+        @include tablet-s {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__count {
+    display: flex;
+    align-self: center;
+  }
+  &__text {
+    color: $white;
+    font-family: $roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    @include tablet-m() {
+      font-size: 22px;
+    }
+    @include tablet-s() {
+      font-size: 12px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    @include tablet-m() {
+      gap: 18px;
+    }
+
+    @include tablet-s() {
+      gap: 10px;
+    }
+
+    &--confirm {
+      @include button($secondary, $secondary, $white);
+    }
+    &--cancel {
+      @include button(transparent, $white, $white);
+    }
+  }
+}
