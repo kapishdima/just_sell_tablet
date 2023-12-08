@@ -18,14 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
 
-    if (allFieldsFilled && paymentSelected) {
+    if (allFieldsFilled && paymentSelected && submitButton) {
       submitButton.style.display = "block"
-    } else {
+    } else if (submitButton) {
       submitButton.style.display = "none"
     }
   }
 
-  submitButton.style.display = "none"
+  if (submitButton) {
+    submitButton.style.display = "none"
+  }
 
   formFields.forEach(function (field) {
     field.addEventListener("input", checkFields)
