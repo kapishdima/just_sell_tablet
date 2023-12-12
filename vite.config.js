@@ -14,8 +14,16 @@ const createHtmlEntries = () => {
 export default defineConfig({
   root: "src",
   build: {
+    cssCodeSplit: false,
+    cssMinify: false,
     outDir: "../dist",
     rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === "index.css") return "styles.css";
+          return assetInfo.name;
+        },
+      },
       input: {
         main: resolve(__dirname, "src/index.html"),
         ...createHtmlEntries(),

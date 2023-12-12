@@ -6,9 +6,8 @@
   align-items: center;
   justify-content: center;
 
-
   &__img {
-    background-image: url("../../assets/img/fail.png");
+    background-image: url("/assets/img/fail.png");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -45,10 +44,10 @@
     @include tablet-s() {
       font-size: 24px;
       text-align: start;
-        margin-bottom: 24px;
+      margin-bottom: 24px;
     }
   }
-  &__button-back{
+  &__button-back {
     @include button($secondary, $secondary, $white);
   }
 }

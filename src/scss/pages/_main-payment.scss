@@ -85,7 +85,6 @@
     width: 628px;
     height: 644px;
     background-color: $white;
-    border: 2px solid $secondary;
     border-radius: 8px;
 
     padding: 42px 35px;
@@ -102,6 +101,11 @@
       height: 270px;
       padding: 22px;
     }
+
+    &.error {
+      border: 2px solid $secondary;
+    }
+
     &--error {
       // display: none;
       // display: block;

@@ -1,4 +1,4 @@
-.success-page{
+.success-page {
   @include container();
   height: 100vh;
   display: flex;
@@ -7,45 +7,44 @@
   gap: 120px;
   justify-content: center;
 
-
-  @include tablet-m(){
+  @include tablet-m() {
     gap: 18px;
   }
-  @include tablet-s(){
+  @include tablet-s() {
     gap: 10px;
   }
 
-    &__img{
-      background-image: url("../../assets/img/success.png");
-      background-repeat: no-repeat;
-      background-size: contain;
+  &__img {
+    background-image: url("/assets/img/success.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 
-      width: 536px;
-      height: 536px;
-        @include tablet-m(){
-            width: 252px;
-            height: 252px;
-        }
-        @include tablet-s(){
-            width: 153px;
-            height: 153px;
-        }
+    width: 536px;
+    height: 536px;
+    @include tablet-m() {
+      width: 252px;
+      height: 252px;
     }
-    &__text{
-     color: $white;
-      text-align: center;
-      font-family: $roboto;
-      font-size: 88px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 150%;
-
-     @include tablet-m(){
-       font-size: 38px;
-     }
-      @include tablet-s(){
-        font-size: 24px;
-      text-align: start;
-      }
+    @include tablet-s() {
+      width: 153px;
+      height: 153px;
     }
   }
+  &__text {
+    color: $white;
+    text-align: center;
+    font-family: $roboto;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include tablet-m() {
+      font-size: 38px;
+    }
+    @include tablet-s() {
+      font-size: 24px;
+      text-align: start;
+    }
+  }
+}
